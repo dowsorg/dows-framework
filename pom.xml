@@ -18,6 +18,7 @@
     <modules>
         <module>dows-dependencies</module>
         <module>dows-frameworks</module>
+        <module>dows-parent</module>
     </modules>
 
 

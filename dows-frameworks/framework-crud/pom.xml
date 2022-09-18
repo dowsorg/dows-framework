@@ -16,6 +16,7 @@
         <module>crud-boot</module>
         <module>crud-elastic</module>
         <module>crud-rdb</module>
+        <module>crud-redis</module>
         <module>crud-engine</module>
         <module>crud-privilege</module>
     </modules>
