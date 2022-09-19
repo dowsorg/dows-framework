@@ -17,7 +17,6 @@
 
     <modules>
         <module>framework-api</module>
-        <module>framework-autowire</module>
         <module>framework-crud</module>
    <!--     <module>framework-event</module>
         <module>framework-limit</module>
