@@ -1,7 +1,6 @@
 package org.dows.framework.rest;
 
 import lombok.SneakyThrows;
-import org.dows.framework.api.exceptions.RestException;
 import org.dows.framework.rest.annotation.RestClient;
 import org.springframework.beans.factory.annotation.AnnotatedBeanDefinition;
 import org.springframework.beans.factory.config.BeanDefinitionHolder;
@@ -78,7 +77,7 @@ public class ClassPathRestClientScanner extends ClassPathBeanDefinitionScanner {
                 clz = Class.forName("org.dows.framewrok.httpclient.HttpClientFactoryBean");
             }
             if (clz == null) {
-                throw new RestException("必须指定实现的客户端");
+                //throw new RestException("必须指定实现的客户端");
             }
             definition.setBeanClass(clz);
         }

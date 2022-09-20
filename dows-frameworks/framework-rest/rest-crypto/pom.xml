@@ -16,11 +16,10 @@
 
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>org.dows.framework</groupId>
             <artifactId>crypto-algorithm</artifactId>
-
-        </dependency>
+        </dependency>-->
 
         <!-- p      <dependency>
                     <groupId>org.dows.framework</groupId>
