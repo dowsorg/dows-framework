@@ -12,6 +12,11 @@
 
 
     <dependencies>
+        <!--<dependency>
+            <groupId>org.dows.framework</groupId>
+            <artifactId>framework-utils</artifactId>
+        </dependency>-->
+
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -19,6 +24,10 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
         <dependency>
             <groupId>com.github.stuxuhai</groupId>

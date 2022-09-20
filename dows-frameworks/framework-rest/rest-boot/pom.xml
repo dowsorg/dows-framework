@@ -8,38 +8,33 @@
         <version>20220701</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>rest-boot</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.dows.framework</groupId>
             <artifactId>rest-api</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.dows.framework</groupId>
             <artifactId>client-retrofit</artifactId>
-
         </dependency>
 
 
         <!--<dependency>
             <groupId>org.dows.framework</groupId>
             <artifactId>client-feign</artifactId>
-
         </dependency>-->
 
         <dependency>
             <groupId>org.dows.framework</groupId>
             <artifactId>rest-sla</artifactId>
-
         </dependency>
 
         <dependency>
             <groupId>org.dows.framework</groupId>
             <artifactId>rest-crypto</artifactId>
-
         </dependency>
 
 
@@ -47,12 +42,7 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.dows.framework</groupId>
-            <artifactId>crypto-boot</artifactId>
 
-            <scope>compile</scope>
-        </dependency>
 
     </dependencies>
 

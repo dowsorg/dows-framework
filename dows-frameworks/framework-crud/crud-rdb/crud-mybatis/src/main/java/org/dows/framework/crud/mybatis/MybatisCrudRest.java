@@ -15,7 +15,7 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public interface MybatisCrudRest<Form, Entity extends CrudEntity, Service extends MybatisCrudService<Entity>> {
+public interface MybatisCrudRest<Input, Entity extends CrudEntity, Service extends MybatisCrudService<Entity>> {
 
     default Service getService() {
         Type[] types = getClass().getGenericInterfaces();
@@ -49,7 +49,7 @@ public interface MybatisCrudRest<Form, Entity extends CrudEntity, Service extend
      */
     @ApiOperation("保存当前请求对象")
     @PostMapping
-    default Response<Entity> save(@Validated @RequestBody Form form) {
+    default Response<Entity> save(@Validated @RequestBody Input form) {
         Class<Entity> entityClass = entityClass();
         Entity entity = BeanConvert.convert(form, entityClass);
         if (!getService().save(entity)) {
@@ -66,7 +66,7 @@ public interface MybatisCrudRest<Form, Entity extends CrudEntity, Service extend
      */
     @ApiOperation("批量保存当前请求对象")
     @PostMapping("/batch")
-    default Response<List<Entity>> save(@Validated @RequestBody List<Form> forms) {
+    default Response<List<Entity>> save(@Validated @RequestBody List<Input> forms) {
         List<Entity> entitys = BeanConvert.converts(forms, entityClass());
         if (!getService().saveBatch(entitys)) {
             Response.crudFailed(CrudStatusCode.CREATE_FAILSED);
@@ -83,7 +83,7 @@ public interface MybatisCrudRest<Form, Entity extends CrudEntity, Service extend
      */
     @ApiOperation("根据ID更新记录")
     @PutMapping("/{id}")
-    default Response<Boolean> updById(@RequestBody @Validated Form form, @PathVariable("id") Long id) {
+    default Response<Boolean> updById(@RequestBody @Validated Input form, @PathVariable("id") Long id) {
         Entity entity = BeanConvert.convert(form, entityClass());
         entity.setId(id);
         if (!getService().updateById(entity)) {
@@ -100,7 +100,7 @@ public interface MybatisCrudRest<Form, Entity extends CrudEntity, Service extend
      */
     @ApiOperation("根据ID更新记录")
     @PutMapping
-    default Response<Boolean> updByIdV1(@RequestBody @Validated Form form) {
+    default Response<Boolean> updByIdV1(@RequestBody @Validated Input form) {
         Entity entity = BeanConvert.convert(form, entityClass());
         if (!getService().updateById(entity)) {
             return Response.crudFailed(CrudStatusCode.UPDATE_FAILED);

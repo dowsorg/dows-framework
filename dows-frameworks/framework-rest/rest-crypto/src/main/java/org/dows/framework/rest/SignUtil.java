@@ -1,8 +1,6 @@
 package org.dows.framework.rest;
 
-import org.dows.framework.utils.crypto.MD5Util;
 import lombok.extern.slf4j.Slf4j;
-import org.dows.framework.api.GlobalKeys;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -30,7 +28,7 @@ public class SignUtil {
         } else {
             sign = getSign(treeMap, route);
         }
-        treeMap.put(GlobalKeys.SIGN, sign);
+        //treeMap.put(GlobalKeys.SIGN, sign);
         return getPostParamsStr(treeMap);
     }
 
@@ -71,7 +69,8 @@ public class SignUtil {
         });
         // 所有请求参数排序后的字符串后进行MD5（32）参数排序+app_secret
         log.info("sign_string: {}", sb);
-        String sign = MD5Util.sign(sb.toString(), "", "utf-8").toLowerCase();
+        String sign = "";
+        //String sign = MD5Util.sign(sb.toString(), "", "utf-8").toLowerCase();
         log.info("sign: {}", sign);
         return sign;
     }
@@ -92,7 +91,8 @@ public class SignUtil {
         String str = sb.deleteCharAt(sb.length() - 1).toString();
         String str1 = str.toLowerCase();
         log.info("before sign: {}", str1);
-        String sign = MD5Util.sign(sb.toString(), "", "utf-8").toLowerCase();
+        String sign = "";
+//        String sign = MD5Util.sign(sb.toString(), "", "utf-8").toLowerCase();
         log.info("after sign: {}", sign);
         return sign;
     }
