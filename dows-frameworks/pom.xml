@@ -18,7 +18,7 @@
         <module>framework-api</module>
         <module>framework-autowire</module>
         <module>framework-crud</module>
-        <module>framework-event</module>
+        <!--<module>framework-event</module>
         <module>framework-limit</module>
         <module>framework-security</module>
         <module>framework-utils</module>
@@ -32,44 +32,7 @@
         <module>framework-sequence</module>
         <module>framework-notify</module>
         <module>framework-plugin</module>
-        <module>framework-loader</module>
+        <module>framework-loader</module>-->
     </modules>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.dows.framework</groupId>
-                <artifactId>dows-dependencies</artifactId>
-                <version>20220701</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.9.0</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
