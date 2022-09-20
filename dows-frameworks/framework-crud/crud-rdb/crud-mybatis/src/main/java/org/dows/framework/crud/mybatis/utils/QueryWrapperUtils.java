@@ -5,9 +5,9 @@ import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import lombok.extern.slf4j.Slf4j;
-import org.dows.framework.crud.api.annotation.TenantNoQuery;
 import org.dows.framework.crud.api.annotation.DataPermission;
 import org.dows.framework.crud.api.annotation.Query;
+import org.dows.framework.crud.api.annotation.TenantNoQuery;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
