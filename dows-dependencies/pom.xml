@@ -76,6 +76,13 @@
             </dependency>
 
             <!-- ############################### db mybatis ###################################-->
+
+            <dependency>
+                <groupId>org.mariadb.jdbc</groupId>
+                <artifactId>mariadb-java-client</artifactId>
+                <version>3.0.6</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -103,18 +110,27 @@
             </dependency>
 
 
+            <!--alibaba -->
             <dependency>
                 <groupId>com.alipay.sdk</groupId>
                 <artifactId>alipay-sdk-java</artifactId>
                 <version>4.33.42.ALL</version>
             </dependency>
-
             <dependency>
                 <groupId>com.alipay.sdk</groupId>
                 <artifactId>alipay-easysdk</artifactId>
                 <version>2.2.2</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>3.0.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-api</artifactId>
+                <version>2.1.0</version>
+            </dependency>
 
             <!-- ################################## basice ############################## -->
             <dependency>
@@ -156,17 +172,7 @@
                 <artifactId>easy-captcha</artifactId>
                 <version>1.6.2</version>
             </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>easyexcel</artifactId>
-                <version>3.0.5</version>
-            </dependency>
 
-            <dependency>
-                <groupId>com.alibaba.nacos</groupId>
-                <artifactId>nacos-api</artifactId>
-                <version>2.1.0</version>
-            </dependency>
 
             <dependency>
                 <groupId>joda-time</groupId>
@@ -433,6 +439,11 @@
                 <version>3.0.3</version>
             </dependency>
 
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>1.5.20</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
