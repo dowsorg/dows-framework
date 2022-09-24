@@ -27,8 +27,8 @@ public class Response<T> implements Serializable {
     private String descr;
     @ApiModelProperty("状态(成功:true,失败:false)")
     private Boolean status = true;
+
     @ApiModelProperty(value = "响应时间")
-    //@JSONField(format = "yyyy-MM-dd HH:mm:ss")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private LocalDateTime timestamp = LocalDateTime.now();
     ;

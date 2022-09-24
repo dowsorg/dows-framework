@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.ApiOperation;
 import org.dows.framework.api.Response;
 import org.dows.framework.api.status.CrudStatusCode;
+import org.dows.framework.crud.mybatis.utils.BeanConvert;
 import org.dows.framework.crud.mybatis.utils.QueryWrapperUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

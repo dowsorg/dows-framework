@@ -1,4 +1,4 @@
-package org.dows.framework.crud.mybatis;
+package org.dows.framework.crud.mybatis.utils;
 
 import org.springframework.beans.BeanUtils;
 

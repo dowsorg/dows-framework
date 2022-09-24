@@ -1,4 +1,4 @@
-package org.dows.framework.crud.mybatis;
+package org.dows.framework.crud.mybatis.batch;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -12,6 +12,12 @@ import java.io.Serializable;
 import java.util.*;
 import java.util.concurrent.*;
 
+/**
+ * 请求合并批次插叙
+ *
+ * @param <M>
+ * @param <T>
+ */
 public class QueueServiceImpl<M extends BaseMapper<T>, T extends Model<T>> extends ServiceImpl<M, T> {
     private final ConcurrentLinkedQueue<FutureModel<T>> taskQueue = new ConcurrentLinkedQueue();
 
