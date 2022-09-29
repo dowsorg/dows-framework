@@ -1,6 +1,8 @@
-package org.dows.framework.crypto;
+package org.dows.framework.crypto.handler;
 
 import org.dows.framework.api.CryptoHandler;
+import org.dows.framework.api.enums.EncryptMode;
+import org.springframework.stereotype.Service;
 
 /**
  * 1.BASE64加密/解密
@@ -13,7 +15,8 @@ import org.dows.framework.api.CryptoHandler;
  * 8.RSA 加密/解密
  * 9.PBE 加密/解密
  */
-public class AesHandler implements CryptoHandler {
+@Service
+public class ShaHandler implements CryptoHandler {
 
     @Override
     public String encrypt(String value) {
@@ -23,5 +26,10 @@ public class AesHandler implements CryptoHandler {
     @Override
     public String decrypt(String value) {
         return null;
+    }
+
+    @Override
+    public EncryptMode getMode() {
+        return EncryptMode.SHA;
     }
 }

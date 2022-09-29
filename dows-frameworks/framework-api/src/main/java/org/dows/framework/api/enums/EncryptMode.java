@@ -19,6 +19,7 @@ public enum EncryptMode {
     AES,
     HMAC,
     SHA,
+    SHA256,
     RSA,
     PBE
 }
