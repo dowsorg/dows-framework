@@ -1,4 +1,4 @@
-package org.dows.framework.api;
+package org.dows.crypto.api;
 
 
 import org.dows.framework.api.enums.EncryptMode;
@@ -21,14 +21,14 @@ public interface CryptoHandler {
      *
      * @return
      */
-    String encrypt(String value);
+    String encode(String value);
 
     /**
      * 解密
      *
      * @return
      */
-    String decrypt(String value);
+    String decode(String value);
 
     EncryptMode getMode();
 

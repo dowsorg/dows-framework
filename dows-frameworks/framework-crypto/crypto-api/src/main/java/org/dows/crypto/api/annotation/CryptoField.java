@@ -1,7 +1,7 @@
-package org.dows.framework.api.annotation;
+package org.dows.crypto.api.annotation;
 
 
-import org.dows.framework.api.CryptoHandler;
+import org.dows.crypto.api.CryptoHandler;
 import org.dows.framework.api.enums.EncryptMode;
 
 import java.lang.annotation.ElementType;
