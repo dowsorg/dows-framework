@@ -1,16 +1,16 @@
 package org.dows.framework.crypto.handler;
 
-import org.dows.framework.api.CryptoHandler;
+import org.dows.crypto.api.CryptoHandler;
 import org.dows.framework.api.enums.EncryptMode;
 
 public class Base64Handler implements CryptoHandler {
     @Override
-    public String encrypt(String value) {
+    public String encode(String value) {
         return null;
     }
 
     @Override
-    public String decrypt(String value) {
+    public String decode(String value) {
         return null;
     }
 

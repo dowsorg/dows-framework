@@ -1,6 +1,6 @@
 package org.dows.framework.crypto.handler;
 
-import org.dows.framework.api.CryptoHandler;
+import org.dows.crypto.api.CryptoHandler;
 import org.dows.framework.api.enums.EncryptMode;
 
 /**
@@ -14,20 +14,21 @@ import org.dows.framework.api.enums.EncryptMode;
  * 8.RSA 加密/解密
  * 9.PBE 加密/解密
  */
-public class DesHandler implements CryptoHandler {
+public class Md5Handler implements CryptoHandler {
 
     @Override
-    public String encrypt(String value) {
+    public String encode(String value) {
         return null;
     }
 
     @Override
-    public String decrypt(String value) {
+    public String decode(String value) {
         return null;
     }
+
 
     @Override
     public EncryptMode getMode() {
-        return EncryptMode.DES;
+        return EncryptMode.MD5;
     }
 }
