@@ -1,8 +1,8 @@
 package org.dows.framework.crypto.algorithm.rsa;
 
 import cn.hutool.core.codec.Base64;
-import com.yonghui.framework.utils.crypto.Base64Utils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.util.Base64Utils;
 
 import javax.crypto.Cipher;
 import java.io.*;
@@ -45,11 +45,9 @@ public class RSA {
             byte[] signed = signature.sign();
 
             return Base64.encode(signed);
-        }
-        catch (GeneralSecurityException e) {
+        } catch (GeneralSecurityException e) {
             log.error("", e);
-        }
-        catch (UnsupportedEncodingException e) {
+        } catch (UnsupportedEncodingException e) {
             log.error("", e);
         }
 
@@ -73,11 +71,9 @@ public class RSA {
             signature.update(content.getBytes(characterEncoding));
             byte[] signed = signature.sign();
             return Base64.encode(signed);
-        }
-        catch (GeneralSecurityException e) {
+        } catch (GeneralSecurityException e) {
             log.error("", e);
-        }
-        catch (UnsupportedEncodingException e) {
+        } catch (UnsupportedEncodingException e) {
             log.error("", e);
         }
 
@@ -126,11 +122,9 @@ public class RSA {
             signature.initVerify(pubKey);
             signature.update(content.getBytes(characterEncoding));
             return signature.verify(Base64.decode(sign));
-        }
-        catch (GeneralSecurityException e) {
+        } catch (GeneralSecurityException e) {
             log.error("", e);
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             log.error("", e);
         }
         return false;
@@ -152,11 +146,9 @@ public class RSA {
             signature.initVerify(publicKey);
             signature.update(content.getBytes(characterEncoding));
             return signature.verify(Base64.decode(sign));
-        }
-        catch (GeneralSecurityException e) {
+        } catch (GeneralSecurityException e) {
             log.error("", e);
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             log.error("", e);
         }
         return false;
@@ -214,8 +206,7 @@ public class RSA {
 
                 if (buf.length == bufl) {
                     block = buf;
-                }
-                else {
+                } else {
                     block = new byte[bufl];
 
                     for (int i = 0; i < bufl; i++) {
@@ -320,7 +311,6 @@ public class RSA {
     public static String encrypt(String content, String publicKey, String cipherAlgorithm, String characterEncoding) throws IOException, GeneralSecurityException {
         return Base64.encode(RSA.encrypt(content.getBytes(characterEncoding), RSA.getPublicKey(publicKey), 1024, 11, cipherAlgorithm));
     }
-
 
 
     /**
