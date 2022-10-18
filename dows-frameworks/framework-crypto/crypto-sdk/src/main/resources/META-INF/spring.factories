@@ -1,0 +1,2 @@
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#  config.sdk.org.dows.framework.crypto.CryptoAutoCofing
