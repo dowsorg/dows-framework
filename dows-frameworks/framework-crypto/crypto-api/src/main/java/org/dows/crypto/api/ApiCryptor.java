@@ -1,8 +1,8 @@
 package org.dows.crypto.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yonghui.framework.api.status.CryptoStatusCode;
-import com.yonghui.framework.exception.CryptoException;
+import org.dows.framework.api.exceptions.CryptoException;
+import org.dows.framework.api.status.CryptoStatusCode;
 import org.slf4j.Logger;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;

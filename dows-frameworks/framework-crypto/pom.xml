@@ -7,6 +7,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>framework-crypto</artifactId>
+    <packaging>pom</packaging>
+
+
+    <modules>
+        <module>crypto-api</module>
+        <module>crypto-algorithm</module>
+        <module>crypto-boot</module>
+        <module>crypto-sdk</module>
+    </modules>
 
 
     <dependencies>
