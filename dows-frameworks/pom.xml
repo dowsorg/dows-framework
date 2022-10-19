@@ -18,6 +18,8 @@
         <module>framework-api</module>
         <module>framework-crud</module>
         <module>framework-crypto</module>
+        <module>framework-sequence</module>
+        <module>framework-rest</module>
         <!--<module>framework-event</module>
         <module>framework-limit</module>
         <module>framework-security</module>
@@ -27,7 +29,7 @@
         <module>framework-lock</module>
         <module>framework-mq</module>
         <module>framework-spi</module>
-        <module>framework-rest</module>
+
         <module>framework-job</module>
         <module>framework-sequence</module>
         <module>framework-notify</module>
