@@ -11,9 +11,9 @@
     <artifactId>rest-client</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>client-http</module>
-        <module>client-feign</module>
-        <module>client-retrofit</module>
+        <module>rest-feign</module>
+        <module>rest-http</module>
+        <module>rest-retrofit</module>
     </modules>
 
     <dependencies>

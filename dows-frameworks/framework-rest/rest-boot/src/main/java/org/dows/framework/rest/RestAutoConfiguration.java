@@ -1,11 +1,11 @@
 package org.dows.framework.rest;
 
-import com.dows.framework.crypto.boot.EnableCrypto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
-import org.dows.framework.crypto.api.ApiCryptor;
+import org.dows.crypto.api.ApiCryptor;
+import org.dows.framework.crypto.boot.EnableCrypto;
 import org.dows.framework.rest.degrade.RetrofitDegradeRuleInitializer;
 import org.dows.framework.rest.property.RestProperties;
 import org.dows.framewrok.retrofit.core.CryptoConverterFactory;

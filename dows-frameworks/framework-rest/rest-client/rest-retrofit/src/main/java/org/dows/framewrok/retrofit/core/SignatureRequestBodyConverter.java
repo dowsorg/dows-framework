@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
-import org.dows.framework.crypto.api.ApiCryptor;
+import org.dows.crypto.api.ApiCryptor;
 import retrofit2.Converter;
 
 import java.io.ByteArrayOutputStream;
