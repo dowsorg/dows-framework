@@ -1,0 +1,2 @@
+default=org.dows.sequence.redis.RedisSequenceImpl
+snowflake=org.dows.sequence.snowflake.SnowflakeIdSequence

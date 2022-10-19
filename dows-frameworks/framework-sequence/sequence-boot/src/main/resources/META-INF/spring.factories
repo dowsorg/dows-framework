@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  org.dows.framework.sequence.SnowflakeConfig,\
+  org.dows.framework.sequence.SequenceAutoConfiguration,\
+  org.dows.framework.sequence.config.IdAutoConfig
