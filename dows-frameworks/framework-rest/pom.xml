@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.dows.framework</groupId>
         <artifactId>dows-frameworks</artifactId>
-        <version>20220701</version>
+        <version>20220701-SNAPSHOT</version>
     </parent>
     <artifactId>framework-rest</artifactId>
     <packaging>pom</packaging>

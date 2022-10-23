@@ -5,13 +5,13 @@
     <parent>
         <artifactId>dows-parent</artifactId>
         <groupId>org.dows.framework</groupId>
-        <version>20220701</version>
+        <version>20220701-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.dows.framework</groupId>
     <artifactId>dows-frameworks</artifactId>
-    <version>20220701</version>
+    <version>20220701-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
