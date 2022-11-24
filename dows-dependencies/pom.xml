@@ -918,12 +918,21 @@
 
     <distributionManagement>
         <repository>
+            <id>findsoft3</id>
+            <name>findsoft3</name>
+            <url>http://192.168.1.147:3337/repository/findsoft3-snapshots/</url>
+        </repository>
+
+<!--        <repository>
             <id>rdc-releases</id>
             <url>https://packages.aliyun.com/maven/repository/2290151-release-R4vX5T/</url>
-        </repository>
+        </repository>-->
         <snapshotRepository>
-            <id>rdc-snapshots</id>
-            <url>https://packages.aliyun.com/maven/repository/2290151-snapshot-aLhHBl/</url>
+            <id>findsoft3</id>
+            <name>findsoft3</name>
+            <url>http://192.168.1.147:3337/repository/findsoft3-snapshots/</url>
+            <!--<id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2290151-snapshot-aLhHBl/</url>-->
         </snapshotRepository>
     </distributionManagement>
 </project>
