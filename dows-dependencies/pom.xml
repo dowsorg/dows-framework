@@ -23,8 +23,13 @@
         <zookeeper.version>3.4.14</zookeeper.version>
         <lucene.version>8.9.0</lucene.version>
 
-        <rbac.version>20220701</rbac.version>
-        <tenant.version>20220701</tenant.version>
+
+        <dows-framework.version>${project.version}</dows-framework.version>
+
+        <account.version>${project.version}</account.version>
+        <rbac.version>${project.version}</rbac.version>
+        <tenant.version>${project.version}</tenant.version>
+        <auth.version>${project.version}</auth.version>
     </properties>
 
 
@@ -482,317 +487,317 @@
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>framework-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>framework-utils</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>framework-loader</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>framework-lock</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>framework-validate</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>framework-spi</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crud-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crud-boot</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crud-elastic</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crud-engine</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crud-privilege</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crud-jpa</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crud-mybatis</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crud-redis</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crypto-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crypto-algorithm</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crypto-boot</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>crypto-sdk</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>framework-event</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>job-crud</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>job-quartz</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>job-sdk</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>limit-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>limit-core</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>limit-boot</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>limit-sdk</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>sequence-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>sequence-boot</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>sequence-db</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>sequence-redis</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>sequence-zk</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>sequence-snowflake</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>security-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>security-core</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>rest-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>rest-boot</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>client-feign</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>client-http</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>client-retrofit</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>rest-crypto</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>rest-degrade</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>rest-limiter</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>rest-sla</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <!--mq-->
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>mq-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>mq-boot</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>mq-consumer</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>mq-core</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>mq-producer</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>notify-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.framework</groupId>
                 <artifactId>notify-impl</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${dows-framework.version}</version>
             </dependency>
 
             <!--##############auth####################-->
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-client</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-config</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-crud</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-jwt</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-oauth</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-resources</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-rest</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>auth-server</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${auth.version}</version>
             </dependency>
 
 
@@ -800,52 +805,52 @@
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-api</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-crud</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-biz</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-boot</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-feign</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-pojo</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-rest-admin</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-rest-developer</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-rest-tenant</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.dows.cloud</groupId>
                 <artifactId>account-rest-user</artifactId>
-                <version>20220701-SNAPSHOT</version>
+                <version>${account.version}</version>
             </dependency>
             <!--rbac-->
             <dependency>
