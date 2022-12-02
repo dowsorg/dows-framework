@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dows-frameworks</artifactId>
+        <groupId>org.dows.framework</groupId>
+        <version>20220701-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>framework-websocket</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>websocket-annotation</module>
+        <module>websocket-api</module>
+        <module>websocket-boot</module>
+        <module>websocket-netty</module>
+    </modules>
+
+</project>
