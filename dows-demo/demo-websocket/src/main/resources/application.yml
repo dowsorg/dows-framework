@@ -10,7 +10,7 @@ server:
 
 spring:
   application:
-    name: dows-store
+    name: demo-websocket
 
 ws:
   host: 0.0.0.0

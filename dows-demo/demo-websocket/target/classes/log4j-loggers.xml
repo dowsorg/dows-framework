@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--All < Trace < Debug < Info < Warn < Error < Fatal < OFF-->
+<loggers>
+    <!--includeLocation 打印行号，如果这里不设置，就算%L 也不会打印行号-->
+    <AsyncRoot level="INFO" includeLocation="true">
+        <AppenderRef ref="CONSOLE"/>
+    </AsyncRoot>
+    <AsyncLogger name="org.dows" level="INFO" includeLocation="true">
+        <appender-ref ref="FILE-INFO"/>
+        <appender-ref ref="FILE-ERROR"/>
+    </AsyncLogger>
+    <AsyncLogger name="com.zaxxer.hikari.pool.ProxyStatement" level="INFO" additivity="false" includeLocation="true">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE-INFO"/>
+    </AsyncLogger>
+    <AsyncLogger name="org.springframework" level="INFO" additivity="false" includeLocation="true">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE-INFO"/>
+    </AsyncLogger>
+</loggers>

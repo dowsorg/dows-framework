@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xi="http://www.w3.org/2001/XInclude"
+               status="DEBUG" name="XInclude">
+    <!--https://logging.apache.org/log4j/2.x/manual/async.html#-->
+    <!--常量配置-->
+    <xi:include href="log4j-property.xml"/>
+    <!--appenders-->
+    <xi:include href="log4j-appenders.xml" />
+    <!--loggers-->
+    <xi:include href="log4j-loggers.xml" />
+</configuration>

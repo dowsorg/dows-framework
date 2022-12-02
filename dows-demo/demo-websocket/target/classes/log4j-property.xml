@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+
+    <!--
+    日志格式如下，这是一个比较通用的格式，既有时间又有线程数、代码执行行数，方便快速定位问题
+    pattern="[%d{yyyy-MM-dd HH:mm:ss,SSS Z}] [%-5p] [%t] [%c %L] %m%n"
+    -->
+    <!--日志格式-->
+    <property name="PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %X{TRACE_ID} [%thread] %-5level %logger[%L] - %m%n"/>
+    <!--日志编码-->
+    <property name="CHARSET" value="utf-8"/>
+    <!--单个日志文件大小-->
+    <property name="MAX_FILE_SIZE" value="200MB"/>
+    <!--日志保存时间-->
+    <property name="MAX_HISTORY" value="P30D"/>
+    <!--日志根路径-->
+    <property name="BASE_LOG_PATH" value="/data/logs"/>
+    <!--日志应用名，例如/data/logs/app/app-info.log-->
+    <property name="SERVER_NAME" value="${sys:SERVICE_NAME}"/>
+
+    <property name="LOG_NAME" value="spring"/>
+
+    <property name="LOG_HOME" value="/data/logs"/>
+
+    <property name="LOG_FILE" value="${LOG_HOME}/${LOG_NAME}-%d{yyyy-MM-dd}.%i.log"/>
+
+    <property name="LOG_ERROR_FILE" value="${LOG_HOME}/${LOG_NAME}-%d{yyyy-MM-dd}.err.%i.log"/>
+
+    <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+
+    <property resource="application.yml"/>
+</properties>
