@@ -191,9 +191,6 @@ public class WebsocketNettyServer implements  WebSocketServer{
      */
     @Override
     public WebSocketServerEndpoint getEndpoint() {
-        return null;
-    }
-    public WebSocketNettyEndpoint getEndpointServer() {
         return webSocketEndpointServer;
     }
 }
