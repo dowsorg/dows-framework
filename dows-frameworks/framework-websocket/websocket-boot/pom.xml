@@ -10,17 +10,6 @@
 
 
     <dependencies>
-
-        <dependency>
-            <groupId>org.dows.framework</groupId>
-            <artifactId>websocket-api</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.framework</groupId>
-            <artifactId>websocket-annotation</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>org.dows.framework</groupId>
             <artifactId>websocket-netty</artifactId>
