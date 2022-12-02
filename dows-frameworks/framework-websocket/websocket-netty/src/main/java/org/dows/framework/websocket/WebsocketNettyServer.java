@@ -36,7 +36,6 @@ public class WebsocketNettyServer implements  WebSocketServer{
     public WebsocketNettyServer(WebSocketNettyEndpoint webSocketServerHandler, WebSocketEndpointConfig webSocketEndpointConfig) {
         this.webSocketEndpointServer = webSocketServerHandler;
         this.webSocketEndpointConfig = webSocketEndpointConfig;
-
     }
 
     /**
