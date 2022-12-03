@@ -20,4 +20,6 @@ public class AccountInfo {
     private Integer isPlatform;
     private TenantInfo currentTenant;
     private List<TenantInfo> tenantList;
+    private Boolean auth;
+    private Long time = 0L;
 }
