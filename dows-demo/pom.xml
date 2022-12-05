@@ -16,6 +16,7 @@
 
     <modules>
         <module>demo-websocket</module>
+        <module>demo-doc</module>
     </modules>
 
 </project>
