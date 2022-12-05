@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.dows.demo.websocket.proto.MessageProto;
 import org.dows.demo.websocket.util.BlankUtil;
 import org.dows.framework.api.AccountInfo;
-import org.dows.framework.websocket.NettyUtil;
+import org.dows.framework.websocket.util.NettyUtil;
 
 import java.util.Collection;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.dows.framework.websocket;
+package org.dows.framework.websocket.util;
 
 import io.netty.channel.Channel;
 

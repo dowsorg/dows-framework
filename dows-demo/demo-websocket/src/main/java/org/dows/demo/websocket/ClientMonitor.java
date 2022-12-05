@@ -2,12 +2,13 @@ package org.dows.demo.websocket;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-@Configuration
+@Component
 @Slf4j
 public class ClientMonitor {
 

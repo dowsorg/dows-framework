@@ -1,4 +1,4 @@
-package org.dows.framework.websocket;
+package org.dows.framework.websocket.util;
 
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
@@ -14,7 +14,7 @@ import java.security.KeyStore;
 /**
  * refer to {@link org.springframework.boot.web.embedded.netty.SslServerCustomizer}
  */
-public final class SslUtils {
+public final class SslUtil {
 
     public static SslContext createSslContext(String keyPassword, String keyStoreResource, String keyStoreType, String keyStorePassword, String trustStoreResource, String trustStoreType, String trustStorePassword) throws SSLException {
         SslContextBuilder sslBuilder = SslContextBuilder

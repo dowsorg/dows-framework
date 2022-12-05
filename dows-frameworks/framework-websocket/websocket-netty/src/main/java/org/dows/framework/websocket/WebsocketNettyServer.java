@@ -18,6 +18,7 @@ import io.netty.util.concurrent.EventExecutorGroup;
 import io.netty.util.internal.logging.InternalLogger;
 import io.netty.util.internal.logging.InternalLoggerFactory;
 import org.dows.framework.websocket.handler.HttpServerHandler;
+import org.dows.framework.websocket.util.SslUtil;
 import org.springframework.util.ObjectUtils;
 
 import java.net.InetAddress;
@@ -47,7 +48,7 @@ public class WebsocketNettyServer implements  WebSocketServer{
         final SslContext sslCtx;
         // SSL
         if (!ObjectUtils.isEmpty(webSocketEndpointConfig.getKeyStore())) {
-            sslCtx = SslUtils.createSslContext(
+            sslCtx = SslUtil.createSslContext(
                     webSocketEndpointConfig.getKeyPassword(),
                     webSocketEndpointConfig.getKeyStore(),
                     webSocketEndpointConfig.getKeyStoreType(),
