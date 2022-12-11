@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.dows.framework</groupId>
+        <artifactId>dows-frameworks</artifactId>
+        <version>20220701-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>framework-oss</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>oss-boot</module>
+        <module>oss-api</module>
+        <module>oss-rest</module>
+        <module>oss-engine</module>
+        <module>oss-register</module>
+        <module>oss-channel</module>
+    </modules>
+
+    <dependencies>
+        <!--<dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>1.12.177</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>-->
+    </dependencies>
+
+</project>

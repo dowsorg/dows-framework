@@ -20,6 +20,7 @@
         <module>framework-crypto</module>
         <module>framework-sequence</module>
         <module>framework-rest</module>
+        <module>framework-oss</module>
         <!--<module>framework-event</module>
         <module>framework-limit</module>
         <module>framework-security</module>

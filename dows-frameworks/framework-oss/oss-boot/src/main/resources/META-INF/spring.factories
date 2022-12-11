@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    org.dows.framework.oss.boot.OssAutoConfiguration,\
+    org.dows.framework.oss.qiniu.QiNiuOssConfiguration,\
+    org.dows.framework.oss.tencent.TencentOssConfiguration
