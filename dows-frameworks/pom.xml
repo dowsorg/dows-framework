@@ -22,6 +22,7 @@
         <module>framework-rest</module>
         <module>framework-websocket</module>
         <module>framework-doc</module>
+        <module>framework-oss</module>
         <!--<module>framework-event</module>
         <module>framework-limit</module>
         <module>framework-security</module>
@@ -49,19 +50,15 @@
         </plugins>
     </build>
 
+
     <distributionManagement>
-        <!--
         <repository>
             <id>rdc-releases</id>
             <url>https://packages.aliyun.com/maven/repository/2290151-release-R4vX5T/</url>
         </repository>
-        -->
         <snapshotRepository>
-            <id>findsoft3</id>
-            <name>findsoft3</name>
-            <url>http://192.168.1.147:3337/repository/findsoft3-snapshots/</url>
-            <!--<id>rdc-snapshots</id>
-            <url>https://packages.aliyun.com/maven/repository/2290151-snapshot-aLhHBl/</url>-->
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2290151-snapshot-aLhHBl/</url>
         </snapshotRepository>
     </distributionManagement>
 
