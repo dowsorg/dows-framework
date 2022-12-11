@@ -22,13 +22,6 @@
         <module>framework-rest</module>
         <module>framework-websocket</module>
         <module>framework-doc</module>
-        <module>framework-doc/doc-api</module>
-        <module>framework-doc/doc-reader</module>
-        <module>framework-doc/doc-writer</module>
-        <module>framework-doc/doc-parser</module>
-        <module>framework-doc/doc-processor</module>
-        <module>framework-doc/doc-boot</module>
-        <module>framework-doc/doc-ocr</module>
         <!--<module>framework-event</module>
         <module>framework-limit</module>
         <module>framework-security</module>
