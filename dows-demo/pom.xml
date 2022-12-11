@@ -17,6 +17,7 @@
     <modules>
         <module>demo-websocket</module>
         <module>demo-doc</module>
+        <module>demo-oss</module>
     </modules>
 
 </project>
