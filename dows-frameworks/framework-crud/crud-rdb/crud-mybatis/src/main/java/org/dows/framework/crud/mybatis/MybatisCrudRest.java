@@ -195,7 +195,7 @@ public interface MybatisCrudRest<Input, Entity extends CrudEntity, Service exten
      * @return {@link Page}
      */
     @ApiOperation("根据查询条件获取分页数据")
-    @GetMapping("/page/{page}/{size}")
+    @PostMapping("/page/{page}/{size}")
     default Response<IPage<Entity>> page(@Validated Entity entity,
                                          @PathVariable(value = "page") Integer pageNo,
                                          @PathVariable(value = "size") Integer pageSize) {

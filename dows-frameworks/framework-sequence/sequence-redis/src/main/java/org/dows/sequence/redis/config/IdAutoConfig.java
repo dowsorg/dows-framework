@@ -13,9 +13,5 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 @Configuration
 public class IdAutoConfig {
 
-    @Bean
-    @ConditionalOnMissingBean(type = "org.dows.id.IdService")
-    public IdGenerator idService(RedisConnectionFactory redisConnectionFactory) {
-        return new RedisIdGenerator(redisConnectionFactory);
-    }
+
 }
