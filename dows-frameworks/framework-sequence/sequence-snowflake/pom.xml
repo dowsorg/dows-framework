@@ -11,6 +11,10 @@
     <artifactId>sequence-snowflake</artifactId>
     <dependencies>
 
+        <dependency>
+            <groupId>org.dows.framework</groupId>
+            <artifactId>sequence-api</artifactId>
+        </dependency>
     </dependencies>
 
 
