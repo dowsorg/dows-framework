@@ -15,6 +15,9 @@
         <module>sequence-api</module>
         <module>sequence-boot</module>
         <module>sequence-core</module>
-        <module>sequence-impl</module>
+        <module>sequence-db</module>
+        <module>sequence-redis</module>
+        <module>sequence-snowflake</module>
+        <module>sequence-zk</module>
     </modules>
 </project>
