@@ -1,0 +1,21 @@
+oss:
+  endpoint: http://minio.xx.cn
+  access-key: xx
+  secret-key: xx
+  local:
+    enable: true
+    filedir:
+      basePath: D:/dsfdsf//dsfds
+      slice-config:
+        task-num: 8
+        part-size: 104857600 # 1024*1024*100
+  tencent:
+    enable: true
+    region: ap-shanghai
+    secret-key: R2MO88qCDtDCp2xWmhHWPx90VeTw4qHO
+    secret-id: AKIDRcT0B1WgW0AzTdSw4r40bw2qOincAQO3
+    bucket-name: cop-cloud-esign
+    base-path: /esign-test
+    slice-config:
+      task-num: 8
+      part-size: 104857600 # 1024*1024*100

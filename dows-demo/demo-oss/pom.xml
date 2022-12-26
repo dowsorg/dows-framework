@@ -11,5 +11,10 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.dows.framework</groupId>
+            <artifactId>oss-boot</artifactId>
+            <version>20220701-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
